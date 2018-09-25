@@ -1,0 +1,62 @@
+html {
+    background-image: url("../images/background.jpg");
+    /* background-color: white; */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: transparent;
+    font-family: 'Crimson Text', serif;
+    color: #fAF7DF;
+}
+
+h1 {
+    color: #B8A26F;
+}
+
+h5, h6 {
+    color: #555555;
+}
+
+strong {
+    color: #FAF7DF;
+}
+
+#logo {
+    max-height: 175px;
+}
+
+#selectRow .character-tile:hover {
+    opacity: 0.8;
+    border: 3px solid green;
+}
+
+#userRow .character-tile {
+    border: 3px solid green;
+}
+
+#enemyRow .character-tile:hover {
+    opacity: 0.8;
+    border: 3px solid red;
+}
+
+#defenderRow .character-tile {
+    border: 3px solid red;
+}
+
+.character-tile {
+    background-color: rgba(230, 230, 230, 0.8);
+    border-radius: 15px;
+    height: 200px;
+    padding: 10px; 
+}
+
+.img-fluid {
+    max-height: 130px;
+}
+
+

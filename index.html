@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Breath of the Wild RPG Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <main class="container">
+        <!-- title bar -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img id="logo" src="assets/images/logo.png">
+                <h1>VERY BAD RPG EDITION</h1>
+                <h3 id="instructions">Select your character to begin.</h3>
+            </div>
+        </div>
+
+        <!-- character selection -->
+        <div id="selectRow" class="row"></div>
+
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <!-- user character title bar -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Your Character:</h3>
+                    </div>
+                </div>
+                <!-- user character row -->
+                <div id="userRow" class="row"></div>
+            </div>
+            <div class="col-md-4 text-center my-auto">
+                <!-- attack button row -->
+                <button id="attBtn" type="button" class="btn btn-danger btn-lg">Attack!</button>
+            </div>
+            <div class="col-md-4">
+                <!-- defender title row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3>Defender:</h3>
+                    </div>
+                </div>
+                
+                <!-- defender row -->
+                <div id="defenderRow" class="row"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <strong id="userStatus"></strong>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <strong id="defenderStatus"></strong>
+            </div>
+        </div>
+
+        <!-- enemy selection title bar -->
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <h3>Available Enemies:</h3>
+            </div>
+        </div>
+
+        <!-- enemy selection row -->
+        <div id="enemyRow" class="row"></div>
+
+       
+
+    </main>
+
+    <script src="logic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
