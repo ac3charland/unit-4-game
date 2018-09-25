@@ -50,10 +50,10 @@ function Character(name, health, attPwr, counterPwr, src, value) {
 }
 
 // Create our four characters
-var Link = new Character("Link", 100, 50, 50, "assets/images/link.png", "0");
+var Link = new Character("Link", 100, 40, 50, "assets/images/link.png", "0");
 var Ganon = new Character("Ganon", 200, 10, 55, "assets/images/Ganon.jpg", "1");
-var Yiga = new Character("Yiga", 85, 80, 10, "assets/images/yiga.jpg", "2");
-var Lynel = new Character("Lynel", 150, 30, 25, "assets/images/lynel.png", "3");
+var Yiga = new Character("Yiga", 85, 60, 10, "assets/images/yiga.jpg", "2");
+var Lynel = new Character("Lynel", 150, 30, 45, "assets/images/lynel.png", "3");
 
 // Put our four characters in an array, where each character's index matches their .value property.
 var characters = [Link, Ganon, Yiga, Lynel];
