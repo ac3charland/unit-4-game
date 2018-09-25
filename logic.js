@@ -149,14 +149,10 @@ function attack() {
 
 // Main function to update the overall state of the game.
 function updateGameStatus() {
-    // Disable the attack button when it shouldn't be used
-    if (!gameStarted || !enemySelected || gameWon || gameOver) {
-        $("#attBtn").attr("disabled", "disabled");
-    }
-
     // Move all characters to the selection row and return if the game hasn't yet started
     if (!gameStarted) {
         moveAllToSelect();
+        $("#attBtn").attr("disabled", "disabled");
         return;
     }
 
@@ -175,6 +171,11 @@ function updateGameStatus() {
         moveToUser(userIndex);
         defenderIndex = parseInt(currentDefender.value);
         moveToDefense(defenderIndex);
+    }
+
+    // Disable the attack button when it shouldn't be used
+    if (!enemySelected || gameWon || gameOver) {
+        $("#attBtn").attr("disabled", "disabled");
     }
 
     // If the game is won, update the instructions and cue the music.
